@@ -1,0 +1,8 @@
+Comandos basicos
+----------------------
+Para compilar usaremos
+go build "ruta de nuestro archivo main" = esto nos crea un compilado en la raiz
+
+---------------------
+Podemos compilar y ejecutar en un solo comando
+go run "ruta de nuestro archivo main"
