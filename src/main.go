@@ -4,8 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
-
+func declaraciones() {
 	//Declaracion de constantes
 	fmt.Println("Declaracion de constantes")
 	const pi float64 = 3.1415
@@ -26,13 +25,16 @@ func main() {
 	fmt.Println("")
 	//Zero value
 	fmt.Println("Zero value")
-	var a int //Valor por defecto 0
+	var a int     //Valor por defecto 0
 	var b float64 //Valor por defecto 0
-	var c string //Valor por defecto vacio
-	var d bool //Valor por defecto false
+	var c string  //Valor por defecto vacio
+	var d bool    //Valor por defecto false
 
 	fmt.Println(a, b, c, d)
+}
 
+func operaciones() {
+	const pi float64 = 3.1415
 	fmt.Println("")
 	//Calcular le area de un cuadrado
 	fmt.Println("Calcular le area de un cuadrado")
@@ -58,7 +60,7 @@ func main() {
 	result = x * y
 	fmt.Println("Multiplicacion", result)
 
-	 //Division
+	//Division
 	result = y / x
 	fmt.Println("Division", result)
 
@@ -77,10 +79,10 @@ func main() {
 	fmt.Println("")
 	fmt.Println("Retos")
 	//Retos
-	
+
 	//Area de un rectangulo
-	base = 12
-	altura = 14
+	base := 12
+	altura := 14
 	result = base * altura
 	fmt.Println("Area del rectangulo: ", result)
 
@@ -88,7 +90,7 @@ func main() {
 	var baseMenor float64 = 10
 	var baseMayor float64 = 15
 	var alturaTrapecio float64 = 4
-	var areaTrapecio float64  = ((baseMayor + baseMenor) / 2.0) * alturaTrapecio
+	var areaTrapecio float64 = ((baseMayor + baseMenor) / 2.0) * alturaTrapecio
 	fmt.Println("Area del trapecio: ", areaTrapecio)
 
 	//Area de un circulo
@@ -96,6 +98,9 @@ func main() {
 	var areaCirculo float64 = pi * pi * radioCiculo
 	fmt.Println("Area circulo:", areaCirculo)
 
+}
+
+func paqueteFmt() {
 	fmt.Println("")
 	//Paquete fmt
 	fmt.Println("Paquete fmt")
@@ -120,5 +125,39 @@ func main() {
 	fmt.Println("")
 	fmt.Printf("Tipo de dato helloMessage: %T\n", helloMenssage)
 	fmt.Printf("Tipo de dato curso: %T\n", cursos)
+}
+
+//Primeras funciones
+func normalFunction(message string){
+	fmt.Println(message)
+}
+
+func tripleArgument(a, b int, c string){
+	fmt.Println(a, b, c)
+}
+
+func returnValue(a int) int {
+	return a * 2
+}
+
+func dobleReturn(a int) (b, c int) {
+	return returnValue(a), a + 4
+}
+
+func introduccionFunciones(){
+	normalFunction("Hola Mundo")
+	tripleArgument(1, 2, "Hola")
+	
+	value := returnValue(2)
+	fmt.Println("value", value)
+
+	value1, value2 := dobleReturn(2)
+	//Podemos descartar un de los resultados con el simbolo piso _
+	//Ejemplo: value1, _ := dobleReturn(2)
+	fmt.Println("value1, value2", value1, value2)
+}
+
+func main() {
+	
 
 }
