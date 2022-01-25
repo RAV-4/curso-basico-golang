@@ -202,7 +202,42 @@ func operadorSwitch(){
 	}
 }
 
-func main() {
-	
 
+//Defer
+func funcionSecundariaDefer(){
+	fmt.Println("Primera metodo")
+	defer fmt.Println("Ultima medoto")
+	fmt.Println("Segunda Metodo")
+}
+
+func funcionDefer(){
+	defer fmt.Println("Ultima principal")
+	//Defer nos sirve para que una sentencia se ejecute al final de todo el codigo
+	funcionSecundariaDefer()
+	fmt.Println("Primera principal")
+	fmt.Println("Segunda Principal")
+}
+
+//Continue y break
+func continueBreak(){
+	for i := 0; i < 10; i++{
+		fmt.Println(i)
+
+		//Continue
+		if(i == 2) {
+			fmt.Println("Es 2")
+			continue //Se usa para que aun si sudece un error el flujo continue, se recomienda controlar el error igualmente
+		}
+
+		//Break
+		if (i == 4){
+			fmt.Println("Es 4")
+			break //Termina el flujo, en este caso termina el for
+		}
+	}
+}
+
+
+func main() {
+	 
 }
