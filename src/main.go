@@ -157,7 +157,31 @@ func introduccionFunciones(){
 	fmt.Println("value1, value2", value1, value2)
 }
 
+//Ciclos
+func ciclos() {
+	//For condicional
+	for i :=0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	fmt.Println("")
+	//For While
+	counter := 10
+	for counter < 20 {
+		fmt.Println(counter)
+		counter++
+	}
+
+	fmt.Println("")
+	//For forever
+	counterForever := 30
+	for {
+		fmt.Println(counterForever)
+		counterForever++
+	}
+}
+
 func main() {
 	
-
+	
 }
