@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func declaraciones() {
@@ -237,7 +238,64 @@ func continueBreak(){
 	}
 }
 
+//Construccion de arrys y Slice
+	func arreglos(){
+	//Array
+	var array [4]int
+	array[0] = 10
+	array[1] = 15
+	fmt.Println(array, len(array), cap(array))
 
+	//Slice
+	slice := []int{10, 11, 12, 13, 14, 15}
+	fmt.Println(slice, len(slice), cap(slice))
+
+	//Metodos slice
+	fmt.Println(slice[0])
+	fmt.Println(slice[:3])
+	fmt.Println(slice[2:4])
+	fmt.Println(slice[2:])
+
+	//Append
+	slice = append(slice, 16)
+	fmt.Println(slice)
+
+	//Append de lista
+	newSlice := []int{17, 18 , 19}
+	slice = append(slice, newSlice...)
+	fmt.Println(slice)
+}
+
+func funcionRange(){
+	slice :=[]string{"Hola", "que", "hace"}
+
+	//Range
+	for i, valor := range slice {
+		fmt.Println(i, valor)
+	}
+
+	for _, valor := range slice {
+		fmt.Println(valor)
+	}
+	
+	for i := range slice {
+		fmt.Println(i)
+	}
+}
+
+func isPalingromo(text string) {
+	text = strings.ToLower(text)
+	var textReverse string
+
+	for i := len(text) - 1; i >= 0; i-- {
+		textReverse += string(text[i])
+	}
+
+	if text == textReverse {
+		fmt.Println("Es un palindromo")
+	} else {
+		fmt.Println("No es un palindromo")
+	}
+}
 func main() {
-	 
 }
