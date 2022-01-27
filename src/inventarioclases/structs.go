@@ -1,13 +1,13 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
 type car struct {
 	brand string
-	year int
+	year  int
 }
 
-func creacionStructs(){
+func creacionStructs() {
 	//Creando una instancia con parametros
 	myCar := car{brand: "Ford", year: 2020}
 	fmt.Println(myCar)
@@ -15,5 +15,5 @@ func creacionStructs(){
 	//Creado una instancia vacia
 	var otherCar car
 	otherCar.brand = "Ferrari"
-	fmt.Println(otherCar) 
+	fmt.Println(otherCar)
 }

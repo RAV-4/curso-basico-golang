@@ -1,4 +1,4 @@
-package inventariocases
+package inventarioclases
 
 import (
 	"fmt"
@@ -13,9 +13,9 @@ func sayText(text string, wg *sync.WaitGroup) {
 func main() {
 	var wg sync.WaitGroup //Se crea esta variable de este tipo que nos ayuda a tener control sobre las goroutine
 	fmt.Println("Hello")
-	wg.Add(1)// Indicamos que sigue una ejecucion de una goroutine
-	
+	wg.Add(1) // Indicamos que sigue una ejecucion de una goroutine
+
 	go sayText("World", &wg)
 
-	wg.Wait()// Esperamos que termine a ejecucion, sin el deficit de un sleep
+	wg.Wait() // Esperamos que termine a ejecucion, sin el deficit de un sleep
 }

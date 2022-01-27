@@ -1,8 +1,8 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-type figuras2D interface{
+type figuras2D interface {
 	area() float64
 }
 type cuadrado struct {
@@ -10,7 +10,7 @@ type cuadrado struct {
 }
 
 type rectangulo struct {
-	base float64
+	base   float64
 	altura float64
 }
 
@@ -29,7 +29,7 @@ func calcular(f figuras2D) {
 func flujoTrabajo() {
 	myCuadrado := cuadrado{lado: 3}
 	myRectangulo := rectangulo{base: 4, altura: 2}
-	
+
 	calcular(myCuadrado)
 	calcular(myRectangulo)
 

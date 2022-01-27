@@ -1,8 +1,8 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-func arreglos(){
+func arreglos() {
 	//Array
 	var array [4]int
 	array[0] = 10
@@ -24,7 +24,7 @@ func arreglos(){
 	fmt.Println(slice)
 
 	//Append de lista
-	newSlice := []int{17, 18 , 19}
+	newSlice := []int{17, 18, 19}
 	slice = append(slice, newSlice...)
 	fmt.Println(slice)
 }

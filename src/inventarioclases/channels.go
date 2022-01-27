@@ -1,4 +1,4 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
@@ -15,5 +15,5 @@ func usoChannels() {
 
 	go sayT("Bye", c)
 
-	fmt.Println(<- c)
+	fmt.Println(<-c)
 }

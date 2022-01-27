@@ -1,8 +1,8 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-func operadorSwitch(){
+func operadorSwitch() {
 	//Switch
 	switch modulo := 5 % 2; modulo {
 	case 0:

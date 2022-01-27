@@ -1,14 +1,14 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
 type pc struct {
-	ram int
-	disk int
+	ram   int
+	disk  int
 	brand string
 }
 
-func (pc pc) ping(){
+func (pc pc) ping() {
 	fmt.Println(pc.brand, "Pong")
 }
 
@@ -25,8 +25,8 @@ func usoPunteros() {
 	a := 50
 	b := &a //Se le asigna a B la direccion en memoria de a, osea que b es el puntero de a
 	fmt.Println(a)
-	fmt.Println(b)//Asi obtenemos la direccion de memoria
-	fmt.Println(*b)//Asi obtenemos el valor en esa direccion de memoria
+	fmt.Println(b)  //Asi obtenemos la direccion de memoria
+	fmt.Println(*b) //Asi obtenemos el valor en esa direccion de memoria
 
 	*b = 100
 	fmt.Println(a)

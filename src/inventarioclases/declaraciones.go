@@ -1,4 +1,4 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 

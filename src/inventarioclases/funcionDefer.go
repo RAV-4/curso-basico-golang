@@ -1,14 +1,14 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-func funcionSecundariaDefer(){
+func funcionSecundariaDefer() {
 	fmt.Println("Primera metodo")
 	defer fmt.Println("Ultima medoto")
 	fmt.Println("Segunda Metodo")
 }
 
-func funcionDefer(){
+func funcionDefer() {
 	defer fmt.Println("Ultima principal")
 	//Defer nos sirve para que una sentencia se ejecute al final de todo el codigo
 	funcionSecundariaDefer()

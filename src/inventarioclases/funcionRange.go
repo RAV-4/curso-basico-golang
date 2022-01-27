@@ -1,9 +1,9 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-func funcionRange(){
-	slice :=[]string{"Hola", "que", "hace"}
+func funcionRange() {
+	slice := []string{"Hola", "que", "hace"}
 
 	//Range
 	for i, valor := range slice {
@@ -13,7 +13,7 @@ func funcionRange(){
 	for _, valor := range slice {
 		fmt.Println(valor)
 	}
-	
+
 	for i := range slice {
 		fmt.Println(i)
 	}

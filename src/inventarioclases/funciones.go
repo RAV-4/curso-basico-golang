@@ -1,12 +1,12 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
-func normalFunction(message string){
+func normalFunction(message string) {
 	fmt.Println(message)
 }
 
-func tripleArgument(a, b int, c string){
+func tripleArgument(a, b int, c string) {
 	fmt.Println(a, b, c)
 }
 
@@ -18,10 +18,10 @@ func dobleReturn(a int) (b, c int) {
 	return returnValue(a), a + 4
 }
 
-func introduccionFunciones(){
+func introduccionFunciones() {
 	normalFunction("Hola Mundo")
 	tripleArgument(1, 2, "Hola")
-	
+
 	value := returnValue(2)
 	fmt.Println("value", value)
 

@@ -1,4 +1,4 @@
-package inventariocases
+package inventarioclases
 
 import (
 	"fmt"
@@ -11,10 +11,10 @@ func say(text string) {
 
 func flujo() {
 	say("Hello")
-	
+
 	go say("World")
 
-	go func (text string )  {
+	go func(text string) {
 		fmt.Println(text)
 	}("Adios")
 

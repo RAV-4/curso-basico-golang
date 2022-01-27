@@ -1,4 +1,4 @@
-package inventariocases
+package inventarioclases
 
 import "fmt"
 
@@ -29,9 +29,9 @@ func recorrerCanales() {
 
 	for i := 0; i < 2; i++ {
 		select {
-		case m1 := <- email1:
+		case m1 := <-email1:
 			fmt.Println("Email :", m1)
-		case m2 := <- email2:
+		case m2 := <-email2:
 			fmt.Println("Email :", m2)
 		}
 	}
