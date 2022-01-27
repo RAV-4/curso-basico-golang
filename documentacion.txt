@@ -36,3 +36,7 @@ Tipos de datos primitivos
 //Complex64 = Real e Imaginario float32
 //Complex128 = Real e Imaginario float64
 //Ejemplo : c:=10 + 8i
+
+
+--------------------------
+el manejador de paquetes de go, se llama go get
