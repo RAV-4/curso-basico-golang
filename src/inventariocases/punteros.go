@@ -16,6 +16,11 @@ func (pc *pc) duplicateRam() {
 	pc.ram = pc.ram * 2
 }
 
+//Este metodo nos sirve para sobrecargar el toString
+func (pc pc) String() string {
+	return fmt.Sprintf("Tengo %d GB Ram, %d GB Disco y es una %s", pc.ram, pc.disk, pc.brand)
+}
+
 func usoPunteros() {
 	a := 50
 	b := &a //Se le asigna a B la direccion en memoria de a, osea que b es el puntero de a
